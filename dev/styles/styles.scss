@@ -1,18 +1,61 @@
+@import "partials/setup";
+@import "partials/variables";
+@import "partials/mixins";
+
+@import "partials/header";
+@import "partials/about";
+@import "partials/whatWeTeach";
+
+
 // BASE STYLES
 
-h1 {
+$fontStack: 'Work Sans', sans-serif; // body and header font
+$vkFont: 'Bungee', sans-serif; // Venture Kids logo font
 
+h1 {
+	font-family: $vkFont;
+	font-size: 4rem;
+	margin: 0px 0px 1rem 0px;
+	text-shadow: 0.3rem 0.3rem rgba(48, 187, 187, 0.3);
 }
 
 h2 {
-
+	font-family: $vkFont;
+	font-size: 3rem;
+	margin: 0px;
 }
 
 h3 {
-
+	font-family: $fontStack;
+	font-weight: 800;
+	font-size: 2rem;
+	line-height: 2rem;
+	letter-spacing: 0.1rem;
+	text-transform: uppercase;
+	margin: 0px;
 }
 
 h4 {
-
+	font-family: $fontStack;
+	font-weight: 400;
+	font-size: 1.2rem;
+	margin: 0px;
 }
 
+body {
+	font-family: $fontStack;
+}
+
+.button_std {
+	margin-top: 2rem;
+	background-image: none;
+	background-color: transparent;
+	color: black;
+	border: 2px solid black;
+	padding: 1rem;
+
+	&:hover {
+		background-color: black;
+		color: white;
+	}
+}

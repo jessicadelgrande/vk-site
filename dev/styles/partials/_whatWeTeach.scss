@@ -1,0 +1,38 @@
+.whatSection {
+	width: 94vw;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	align-items: center;
+	margin: 3rem auto;
+}
+
+.whatSectionTitle {
+	display: inline-block;
+	text-align: center;
+	width: 100%;
+	margin: 3rem auto;
+}
+
+.sectionOverview {
+	width: 100%;
+}
+
+.skillBlockImage,
+.skillBlockText {
+	width: 47%;
+}
+
+.skillBlockImage {
+	width: 400px;
+	height: 320px;
+	background-color: thistle;
+}
+
+hr {
+	width: 100%;
+	background: black;
+	margin: 50px 0px;
+	height: 3px;
+	border: none;
+}

@@ -1,0 +1,191 @@
+.aboutSection {
+	display: flex;
+	justify-content: center;
+}
+
+.aboutTitleWrapper {
+	width: 800px;
+	height: 130px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+
+.aboutLineContainer {
+	width: 800px;
+	height: 200px;
+	overflow: hidden;
+	position: relative;
+	top: 0;
+	left: 0;
+	background-color: white;
+}
+
+.line {
+	height: 410px;
+	width: 4px;
+	background-color: black;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform-origin: 0 0;
+	box-shadow: 10px 10px rgba(42,42,41, 0.1);
+}
+
+.line1 {
+	transform: rotate(10deg);
+}
+
+.line2 {
+	transform: rotate(20deg);
+}
+
+.line3 {
+	transform: rotate(30deg);
+}
+
+.line4 {
+	transform: rotate(40deg);
+}
+
+.line5 {
+	transform: rotate(50deg);
+}
+
+.line6 {
+	transform: rotate(60deg);
+}
+
+.line7 {
+	transform: rotate(70deg);
+}
+
+.line8 {
+	transform: rotate(80deg);
+}
+
+.line9 {
+	transform: rotate(90deg);
+}
+
+.line10 {
+	transform: rotate(100deg);
+}
+
+.line11 {
+	transform: rotate(110deg);
+}
+
+.line12 {
+	transform: rotate(120deg);
+}
+
+.line13 {
+	transform: rotate(130deg);
+}
+
+.line14 {
+	transform: rotate(140deg);
+}
+
+.line15 {
+	transform: rotate(150deg);
+}
+
+.line16 {
+	transform: rotate(160deg);
+}
+
+.line17 {
+	transform: rotate(170deg);
+}
+
+.line18 {
+	transform: rotate(180deg);
+}
+
+.line19 {
+	transform: rotate(190deg);
+}
+
+.line20 {
+	transform: rotate(200deg);
+}
+
+.line21 {
+	transform: rotate(210deg);
+}
+
+.line22 {
+	transform: rotate(220deg);
+}
+
+.line23 {
+	transform: rotate(230deg);
+}
+
+.line24 {
+	transform: rotate(240deg);
+}
+
+.line25 {
+	transform: rotate(250deg);
+}
+
+.line26 {
+	transform: rotate(260deg);
+}
+
+.line27 {
+	transform: rotate(270deg);
+}
+
+.line28 {
+	transform: rotate(280deg);
+}
+
+.line29 {
+	transform: rotate(290deg);
+}
+
+.line30 {
+	transform: rotate(300deg);
+}
+
+.line31 {
+	transform: rotate(310deg);
+}
+
+.line32 {
+	transform: rotate(320deg);
+}
+
+.line33 {
+	transform: rotate(330deg);
+}
+
+.line34 {
+	transform: rotate(340deg);
+}
+
+.line35 {
+	transform: rotate(350deg);
+}
+
+.aboutTitle {
+	width: 600px;
+	height: 80px;
+	border: 4px solid black;
+	background-color: white;
+	// box-shadow: 10px 10px rgba(42,42,41, 0.1);
+	margin: 0 auto;
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+	p {
+		text-align: center;
+	}
+}
