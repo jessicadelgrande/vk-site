@@ -163,11 +163,13 @@ input::-moz-focus-inner {
   box-sizing: border-box; }
 
 header {
-  height: 110vh;
+  height: 100vh;
   width: 100vw;
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  margin-bottom: 50px;
+  position: relative; }
 
 .headerContainer {
   justify-content: center;
@@ -181,10 +183,12 @@ header {
 
 .aboutSection {
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+  height: 80vh;
+  margin-top: 400px; }
 
 .aboutTitleWrapper {
-  width: 800px;
+  width: 100%;
   height: 130px;
   display: flex;
   justify-content: center;
@@ -192,8 +196,8 @@ header {
   position: relative; }
 
 .aboutLineContainer {
-  width: 800px;
-  height: 200px;
+  width: 100%;
+  height: 600px;
   overflow: hidden;
   position: relative;
   top: 0;
@@ -201,7 +205,7 @@ header {
   background-color: white; }
 
 .line {
-  height: 410px;
+  height: 800px;
   width: 4px;
   background-color: black;
   position: absolute;
@@ -318,7 +322,6 @@ header {
 .aboutTitle {
   width: 600px;
   height: 80px;
-  border: 4px solid black;
   background-color: white;
   margin: 0 auto;
   position: absolute;
@@ -328,22 +331,25 @@ header {
   .aboutTitle p {
     text-align: center; }
 
-.whatSection {
-  width: 94vw;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
-  align-items: center;
-  margin: 3rem auto; }
-
 .whatSectionTitle {
   display: inline-block;
   text-align: center;
-  width: 100%;
-  margin: 3rem auto; }
+  width: 100%; }
 
 .sectionOverview {
   width: 100%; }
+
+.skillBlock {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between; }
+
+h3:first-of-type {
+  background-color: cadetblue; }
+
+.skillBlock-first {
+  margin-top: 3rem; }
 
 .skillBlockImage,
 .skillBlockText {
@@ -361,6 +367,64 @@ hr {
   height: 3px;
   border: none; }
 
+.provideSectionTitle {
+  text-align: center; }
+
+.provideContainer {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  margin-top: 3rem; }
+
+.provideBlock {
+  width: 30%; }
+
+.provideIcon {
+  width: 120px;
+  height: 120px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0 auto; }
+
+.provideIcon-lunch {
+  background-image: url("../../assets/sandwich_new.png"); }
+
+.provideIcon-tools {
+  background-image: url("../../assets/pencil-case2.png"); }
+
+.provideIcon-roleModels {
+  background-image: url("../../assets/hand.png"); }
+
+.provideText h3 {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-top: 1rem; }
+
+.provideText-lunch,
+.provideText-tools,
+.provideText-roleModels {
+  cursor: pointer; }
+  .provideText-lunch:hover,
+  .provideText-tools:hover,
+  .provideText-roleModels:hover {
+    color: red; }
+
+.provideHidden {
+  display: none; }
+  .provideHidden p {
+    text-align: center; }
+
+.whySection {
+  margin: 3rem auto; }
+
+.whySectionTitle h2 {
+  text-align: center; }
+
+@font-face {
+  font-family: neoReg;
+  src: url("../../assets/fonts/neo_sans-regular.woff") format("woff"); }
+
 h1 {
   font-family: "Bungee", sans-serif;
   font-size: 4rem;
@@ -373,7 +437,7 @@ h2 {
   margin: 0px; }
 
 h3 {
-  font-family: "Work Sans", sans-serif;
+  font-family: "neoReg", sans-serif;
   font-weight: 800;
   font-size: 2rem;
   line-height: 2rem;
@@ -382,13 +446,19 @@ h3 {
   margin: 0px; }
 
 h4 {
-  font-family: "Work Sans", sans-serif;
+  font-family: "neoReg", sans-serif;
   font-weight: 400;
   font-size: 1.2rem;
   margin: 0px; }
 
 body {
-  font-family: "Work Sans", sans-serif; }
+  font-family: "neoReg", sans-serif;
+  position: relative;
+  width: 100%;
+  height: 100%; }
+
+p {
+  letter-spacing: 0.3px; }
 
 .button_std {
   margin-top: 2rem;
@@ -400,3 +470,7 @@ body {
   .button_std:hover {
     background-color: black;
     color: white; }
+
+.wrapper {
+  width: 94vw;
+  margin: 3rem auto; }

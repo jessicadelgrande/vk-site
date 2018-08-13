@@ -5,12 +5,15 @@
 @import "partials/header";
 @import "partials/about";
 @import "partials/whatWeTeach";
+@import "partials/provide";
+@import "partials/why";
 
 
 // BASE STYLES
-
-$fontStack: 'Work Sans', sans-serif; // body and header font
-$vkFont: 'Bungee', sans-serif; // Venture Kids logo font
+@font-face {
+	font-family: neoReg;
+	src: url("../../assets/fonts/neo_sans-regular.woff") format("woff");
+}
 
 h1 {
 	font-family: $vkFont;
@@ -44,6 +47,14 @@ h4 {
 
 body {
 	font-family: $fontStack;
+	position: relative;
+	width: 100%;
+	height: 100%;
+
+}
+
+p {
+	letter-spacing: 0.3px;
 }
 
 .button_std {
@@ -59,3 +70,20 @@ body {
 		color: white;
 	}
 }
+
+.wrapper {
+	width: 94vw;
+	margin: 3rem auto;
+}
+
+// BACKGROUND ANIMATION
+// .anim, 
+// .anim svg {
+// 	position: relative;
+// 	width: 100%;
+// 	height: 100%;
+// }
+
+// .anim path {
+// 	stroke-width: 2;
+// }

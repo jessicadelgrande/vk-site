@@ -1,9 +1,13 @@
 "use strict";
 
-App.init = function () {
-	App.events();
-}; //end of init();
+$(".provideText-lunch").click(function () {
+	$(".provideHidden-lunch").slideToggle();
+});
 
-$(function () {
-	App.init();
+$(".provideText-tools").click(function () {
+	$(".provideHidden-tools").slideToggle();
+});
+
+$(".provideText-roleModels").click(function () {
+	$(".provideHidden-roleModels").slideToggle();
 });

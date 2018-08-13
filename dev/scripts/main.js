@@ -1,10 +1,11 @@
+$( ".provideText-lunch" ).click(function() {
+	$( ".provideHidden-lunch" ).slideToggle();
+});
 
+$( ".provideText-tools" ).click(function() {
+	$( ".provideHidden-tools" ).slideToggle();
+});
 
-
-App.init = () => {
-	App.events();
-} //end of init();
-
-$(function() {
-	App.init();
+$( ".provideText-roleModels" ).click(function() {
+	$( ".provideHidden-roleModels" ).slideToggle();
 });

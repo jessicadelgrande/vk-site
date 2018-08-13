@@ -1,0 +1,63 @@
+.provideSection {
+	// background-color: pink;
+}
+
+.provideSectionTitle {
+	text-align: center;
+}
+
+.provideContainer {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	margin-top: 3rem;
+}
+
+.provideBlock {
+	width: 30%;
+}
+
+.provideIcon {
+	width: 120px;
+	height: 120px;
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+	margin: 0 auto;
+}
+
+.provideIcon-lunch {
+	background-image: url("../../assets/sandwich_new.png");
+}
+
+.provideIcon-tools {
+	background-image: url("../../assets/pencil-case2.png");
+}
+
+.provideIcon-roleModels {
+	background-image: url("../../assets/hand.png");
+}
+
+.provideText h3 {
+	text-align: center;
+	font-size: 1.5rem;
+	margin-top: 1rem;
+}
+
+.provideText-lunch,
+.provideText-tools,
+.provideText-roleModels {
+	cursor: pointer;
+
+	&:hover {
+		color: red;
+	}
+}
+
+.provideHidden {
+	display: none;
+
+	p {
+		text-align: center;
+	}
+}

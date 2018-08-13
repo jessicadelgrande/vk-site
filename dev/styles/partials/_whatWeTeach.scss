@@ -1,21 +1,26 @@
-.whatSection {
-	width: 94vw;
-	display: flex;
-	flex-flow: row wrap;
-	justify-content: space-between;
-	align-items: center;
-	margin: 3rem auto;
-}
-
 .whatSectionTitle {
 	display: inline-block;
 	text-align: center;
 	width: 100%;
-	margin: 3rem auto;
 }
 
 .sectionOverview {
 	width: 100%;
+}
+
+.skillBlock {
+	width: 100%;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+}
+
+h3:first-of-type {
+	background-color: cadetblue;
+}
+
+.skillBlock-first {
+	margin-top: 3rem;
 }
 
 .skillBlockImage,
