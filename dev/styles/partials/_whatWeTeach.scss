@@ -5,18 +5,17 @@
 }
 
 .sectionOverview {
-	width: 100%;
+	// width: 100%;
+	width: 90%;
+	margin: 0 auto;
 }
 
 .skillBlock {
-	width: 100%;
+	width: 90%;
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: space-between;
-}
-
-h3:first-of-type {
-	background-color: cadetblue;
+	margin: 100px auto;
 }
 
 .skillBlock-first {
@@ -29,9 +28,34 @@ h3:first-of-type {
 }
 
 .skillBlockImage {
-	width: 400px;
-	height: 320px;
-	background-color: thistle;
+	width: 200px;
+	height: 200px;
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+	margin: 0 auto;
+}
+
+.skillIcon-product {
+	background-image: url("../../assets/idea.svg");
+}
+
+.skillIcon-financial {
+	background-image: url("../../assets/finance.svg");
+}
+
+.skillIcon-webDev {
+	background-image: url("../../assets/coding.svg");
+}
+
+.skillIcon-growth {
+	background-image: url("../../assets/growth.svg");
+}
+
+.skillBlockText {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
 
 hr {

@@ -1,0 +1,32 @@
+.sectionHeader h3 {
+	text-align: center;
+}
+
+.sponsorLogoContainer {
+	width: 90%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0 auto;
+}
+
+.sponsorLogo {
+	width: 200px;
+	height: 120px;
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+	margin: 0 auto;
+}
+
+.sponsorLogo-lighthouse {
+	background-image: url("../../assets/LighthouseLabs.png");
+}
+
+.sponsorLogo-telus {
+	background-image: url("../../assets/Telus.png");
+}
+
+.sponsorLogo-node {
+	background-image: url("../../../assets/Nodejs.png");
+}

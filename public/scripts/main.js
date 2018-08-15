@@ -1,5 +1,6 @@
 "use strict";
 
+// WHAT WE PROVIDE - SLIDE-DOWN TEXT BLOCKS
 $(".provideText-lunch").click(function () {
 	$(".provideHidden-lunch").slideToggle();
 });

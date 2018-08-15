@@ -168,18 +168,38 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   margin-bottom: 50px;
   position: relative; }
 
-.headerContainer {
+.laptopContainer {
+  position: relative;
+  width: 60vw; }
+
+.laptopIcon {
+  width: 200px;
+  height: 200px;
+  background-image: url("../../assets/laptop_open-col--blank.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  margin: 1rem auto; }
+
+.laptop {
+  justify-content: center;
+  align-items: center; }
+
+.vkSign-subhead {
   justify-content: center;
   align-items: center;
   text-align: center;
-  width: 600px;
   background-color: white;
   border: 4px solid black;
   padding: 2rem;
   box-shadow: 10px 10px rgba(42, 42, 41, 0.1); }
+
+.vkSign-subhead {
+  width: 450px; }
 
 .aboutSection {
   display: flex;
@@ -197,7 +217,7 @@ header {
 
 .aboutLineContainer {
   width: 100%;
-  height: 600px;
+  height: 800px;
   overflow: hidden;
   position: relative;
   top: 0;
@@ -337,16 +357,15 @@ header {
   width: 100%; }
 
 .sectionOverview {
-  width: 100%; }
+  width: 90%;
+  margin: 0 auto; }
 
 .skillBlock {
-  width: 100%;
+  width: 90%;
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-between; }
-
-h3:first-of-type {
-  background-color: cadetblue; }
+  justify-content: space-between;
+  margin: 100px auto; }
 
 .skillBlock-first {
   margin-top: 3rem; }
@@ -356,9 +375,29 @@ h3:first-of-type {
   width: 47%; }
 
 .skillBlockImage {
-  width: 400px;
-  height: 320px;
-  background-color: thistle; }
+  width: 200px;
+  height: 200px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0 auto; }
+
+.skillIcon-product {
+  background-image: url("../../assets/idea.svg"); }
+
+.skillIcon-financial {
+  background-image: url("../../assets/finance.svg"); }
+
+.skillIcon-webDev {
+  background-image: url("../../assets/coding.svg"); }
+
+.skillIcon-growth {
+  background-image: url("../../assets/growth.svg"); }
+
+.skillBlockText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
 
 hr {
   width: 100%;
@@ -380,8 +419,8 @@ hr {
   width: 30%; }
 
 .provideIcon {
-  width: 120px;
-  height: 120px;
+  width: 200px;
+  height: 200px;
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -394,7 +433,7 @@ hr {
   background-image: url("../../assets/pencil-case2.png"); }
 
 .provideIcon-roleModels {
-  background-image: url("../../assets/hand.png"); }
+  background-image: url("../../assets/hands.svg"); }
 
 .provideText h3 {
   text-align: center;
@@ -421,9 +460,44 @@ hr {
 .whySectionTitle h2 {
   text-align: center; }
 
+.sectionHeader h3 {
+  text-align: center; }
+
+.sponsorLogoContainer {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto; }
+
+.sponsorLogo {
+  width: 200px;
+  height: 120px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0 auto; }
+
+.sponsorLogo-lighthouse {
+  background-image: url("../../assets/LighthouseLabs.png"); }
+
+.sponsorLogo-telus {
+  background-image: url("../../assets/Telus.png"); }
+
+.sponsorLogo-node {
+  background-image: url("../../../assets/Nodejs.png"); }
+
 @font-face {
   font-family: neoReg;
   src: url("../../assets/fonts/neo_sans-regular.woff") format("woff"); }
+
+@font-face {
+  font-family: neoLight;
+  src: url("../../assets/fonts/neo_sans-light.woff") format("woff"); }
+
+@font-face {
+  font-family: neoBold;
+  src: url("../../assets/fonts/neo_sans-bold.woff") format("woff"); }
 
 h1 {
   font-family: "Bungee", sans-serif;
@@ -432,13 +506,13 @@ h1 {
   text-shadow: 0.3rem 0.3rem rgba(48, 187, 187, 0.3); }
 
 h2 {
-  font-family: "Bungee", sans-serif;
+  font-family: "neoBold", sans-serif;
   font-size: 3rem;
+  text-transform: uppercase;
   margin: 0px; }
 
 h3 {
-  font-family: "neoReg", sans-serif;
-  font-weight: 800;
+  font-family: "neoLight", sans-serif;
   font-size: 2rem;
   line-height: 2rem;
   letter-spacing: 0.1rem;
@@ -446,19 +520,19 @@ h3 {
   margin: 0px; }
 
 h4 {
-  font-family: "neoReg", sans-serif;
+  font-family: "neoLight", sans-serif;
   font-weight: 400;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   margin: 0px; }
 
 body {
-  font-family: "neoReg", sans-serif;
+  font-family: "neoLight", sans-serif;
   position: relative;
   width: 100%;
   height: 100%; }
 
 p {
-  letter-spacing: 0.3px; }
+  letter-spacing: 0.5px; }
 
 .button_std {
   margin-top: 2rem;
