@@ -1,8 +1,8 @@
 .aboutSection {
 	display: flex;
 	justify-content: center;
-	height: 80vh;
-	margin-top: 400px;
+	// height: 80vh;
+	// margin-top: 400px;
 }
 
 .aboutTitleWrapper {
@@ -16,87 +16,92 @@
 
 .aboutLineContainer {
 	width: 100%;
-	height: 800px;
+	// height: 800px;
+	height: 100vh;
 	overflow: hidden;
-	position: relative;
-	top: 0;
-	left: 0;
-	background-color: white;
+	// position: relative;
+	// top: 0;
+	// left: 0;
+	background-color: #f3f3f3;
 }
 
 .line {
-	height: 800px;
+	// height: 800px;
+	height: 135vh;
 	width: 4px;
-	background-color: black;
+	// background-color: black;
+	// background-color: rgba(42,42,41, 0.1);
+	background-color: #ffffaa;
 	position: absolute;
 	left: 50%;
-	top: 50%;
+	// top: 50%;
+	top: 100%;
 	transform-origin: 0 0;
 	box-shadow: 10px 10px rgba(42,42,41, 0.1);
 }
 
 .line1 {
-	transform: rotate(10deg);
-}
-
-.line2 {
-	transform: rotate(20deg);
-}
-
-.line3 {
-	transform: rotate(30deg);
-}
-
-.line4 {
-	transform: rotate(40deg);
-}
-
-.line5 {
-	transform: rotate(50deg);
-}
-
-.line6 {
-	transform: rotate(60deg);
-}
-
-.line7 {
-	transform: rotate(70deg);
-}
-
-.line8 {
-	transform: rotate(80deg);
-}
-
-.line9 {
 	transform: rotate(90deg);
 }
 
-.line10 {
+.line2 {
+	transform: rotate(95deg);
+}
+
+.line3 {
 	transform: rotate(100deg);
 }
 
-.line11 {
+.line4 {
+	transform: rotate(105deg);
+}
+
+.line5 {
 	transform: rotate(110deg);
 }
 
-.line12 {
+.line6 {
+	transform: rotate(115deg);
+}
+
+.line7 {
 	transform: rotate(120deg);
 }
 
-.line13 {
+.line8 {
+	transform: rotate(125deg);
+}
+
+.line9 {
 	transform: rotate(130deg);
 }
 
-.line14 {
+.line10 {
+	transform: rotate(135deg);
+}
+
+.line11 {
 	transform: rotate(140deg);
 }
 
-.line15 {
+.line12 {
+	transform: rotate(145deg);
+}
+
+.line13 {
 	transform: rotate(150deg);
 }
 
-.line16 {
+.line14 {
+	transform: rotate(155deg);
+}
+
+.line15 {
 	transform: rotate(160deg);
+}
+
+.line16 {
+	transform: rotate(165deg);
 }
 
 .line17 {
@@ -104,75 +109,75 @@
 }
 
 .line18 {
-	transform: rotate(180deg);
+	transform: rotate(175deg);
 }
 
 .line19 {
-	transform: rotate(190deg);
+	transform: rotate(180deg);
 }
 
 .line20 {
-	transform: rotate(200deg);
+	transform: rotate(185deg);
 }
 
 .line21 {
-	transform: rotate(210deg);
+	transform: rotate(190deg);
 }
 
 .line22 {
-	transform: rotate(220deg);
+	transform: rotate(195deg);
 }
 
 .line23 {
-	transform: rotate(230deg);
+	transform: rotate(200deg);
 }
 
 .line24 {
-	transform: rotate(240deg);
+	transform: rotate(205deg);
 }
 
 .line25 {
-	transform: rotate(250deg);
+	transform: rotate(210deg);
 }
 
 .line26 {
-	transform: rotate(260deg);
+	transform: rotate(215deg);
 }
 
 .line27 {
-	transform: rotate(270deg);
+	transform: rotate(220deg);
 }
 
 .line28 {
-	transform: rotate(280deg);
+	transform: rotate(225deg);
 }
 
 .line29 {
-	transform: rotate(290deg);
+	transform: rotate(230deg);
 }
 
 .line30 {
-	transform: rotate(300deg);
+	transform: rotate(235deg);
 }
 
 .line31 {
-	transform: rotate(310deg);
+	transform: rotate(240deg);
 }
 
 .line32 {
-	transform: rotate(320deg);
+	transform: rotate(245deg);
 }
 
 .line33 {
-	transform: rotate(330deg);
+	transform: rotate(250deg);
 }
 
 .line34 {
-	transform: rotate(340deg);
+	transform: rotate(255deg);
 }
 
 .line35 {
-	transform: rotate(350deg);
+	transform: rotate(260deg);
 }
 
 .aboutTitle {
@@ -183,12 +188,14 @@
 	background-color: white;
 	// box-shadow: 10px 10px rgba(42,42,41, 0.1);
 	margin: 0 auto;
-	position: absolute;
+	// position: absolute;
+	// top: 94%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	width: 100%;
 	
-	p {
+	h3 {
 		text-align: center;
 	}
 }

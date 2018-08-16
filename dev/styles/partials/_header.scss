@@ -9,24 +9,23 @@ header {
 	position: relative;
 }
 
-.laptopContainer {
-	position: relative;
-	width: 60vw;
-}
-
-.laptopIcon {
-	width: 200px;
-	height: 200px;
-	background-image: url("../../assets/laptop_open-col--blank.svg");
-	background-repeat: no-repeat;
-	background-size: contain;
-	background-position: center;
-	margin: 1rem auto;
-}
-
-.laptop {
+.vkTitleContainer {
+	// position: absolute;
+	// top: 20vh;
+	width: 100%;
+	height: 60%;
+	display: flex;
+	flex-flow: column nowrap;
 	justify-content: center;
 	align-items: center;
+}
+
+.vkSign {
+	width: 600px;
+	background-color: #fff;
+	border: 4px solid black;
+	text-align: center;
+	padding: 1rem;
 }
 
 .vkSign-subhead {
@@ -35,15 +34,49 @@ header {
 	text-align: center;
 	background-color: white;
 	border: 4px solid black;
-	padding: 2rem;
+	padding: 1rem;
 	box-shadow: 10px 10px rgba(42,42,41, 0.1);
-}
-
-.vkSign {
-	// width: 600px;
-	// margin-bottom: 2rem;
-}
-
-.vkSign-subhead {
 	width: 450px;
+}
+
+.buildingsContainer {
+	width: 100%;
+	max-width: 1200px;
+	display: flex;
+	justify-content: space-around;
+	position: absolute;
+	top: 65%;
+}
+
+.buildingIcon {
+	width: 200px;
+	height: 200px;
+	background-size: contain;
+	background-position: bottom;
+	background-repeat: no-repeat;
+	margin: 0 auto;
+}
+
+.buildingIcon1 {
+	background-image: url("../../assets/apartment1.svg");
+}
+
+.buildingIcon2 {
+	background-image: url("../../assets/apartment2.svg");
+}
+
+.buildingIcon3 {
+	background-image: url("../../assets/apartment3.svg");
+}
+
+.buildingIcon4 {
+	background-image: url("../../assets/apartment4.svg");
+}
+
+.buildingIcon5 {
+	background-image: url("../../assets/woman-computer.svg");
+}
+
+.buildingIcon6 {
+	background-image: url("../../assets/apartment5.svg");
 }

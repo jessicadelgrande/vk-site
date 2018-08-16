@@ -5,3 +5,45 @@
 .whySectionTitle h2 {
 	text-align: center;
 }
+
+.uglyContainer {
+	display: flex;
+
+}
+
+.uglyTitle,
+.uglyContent {
+	width: 50%;
+}
+
+.whyDataContainer {
+	margin-top: 2rem;
+	display: flex;
+	align-items: center;
+}
+
+.whyDataIcon,
+.whyDataText {
+	width: 50%;
+}
+
+.whyDataIcon {
+	width: 200px;
+	height: 200px;
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+	margin: 0 auto;
+}
+
+.whyIcon-startups {
+	background-image: url("../../assets/startup.svg");
+}
+
+.whyIcon-venture {
+	background-image: url("../../assets/handshake.svg");
+}
+
+.whyIcon-ceo {
+	background-image: url("../../assets/woman-muslim.svg");
+}
