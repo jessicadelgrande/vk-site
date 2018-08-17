@@ -1,201 +1,29 @@
 .aboutSection {
 	display: flex;
 	justify-content: center;
-	// height: 80vh;
-	// margin-top: 400px;
+	background-color: $bg-yellow;
+	padding: 200px 0;
+	margin: 200px auto;
+	height: 80vh;
 }
 
 .aboutTitleWrapper {
 	width: 100%;
-	height: 130px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	position: relative;
-}
-
-.aboutLineContainer {
-	width: 100%;
-	// height: 800px;
-	height: 100vh;
-	overflow: hidden;
-	// position: relative;
-	// top: 0;
-	// left: 0;
-	background-color: #f3f3f3;
-}
-
-.line {
-	// height: 800px;
-	height: 135vh;
-	width: 4px;
-	// background-color: black;
-	// background-color: rgba(42,42,41, 0.1);
-	background-color: #ffffaa;
-	position: absolute;
-	left: 50%;
-	// top: 50%;
-	top: 100%;
-	transform-origin: 0 0;
-	box-shadow: 10px 10px rgba(42,42,41, 0.1);
-}
-
-.line1 {
-	transform: rotate(90deg);
-}
-
-.line2 {
-	transform: rotate(95deg);
-}
-
-.line3 {
-	transform: rotate(100deg);
-}
-
-.line4 {
-	transform: rotate(105deg);
-}
-
-.line5 {
-	transform: rotate(110deg);
-}
-
-.line6 {
-	transform: rotate(115deg);
-}
-
-.line7 {
-	transform: rotate(120deg);
-}
-
-.line8 {
-	transform: rotate(125deg);
-}
-
-.line9 {
-	transform: rotate(130deg);
-}
-
-.line10 {
-	transform: rotate(135deg);
-}
-
-.line11 {
-	transform: rotate(140deg);
-}
-
-.line12 {
-	transform: rotate(145deg);
-}
-
-.line13 {
-	transform: rotate(150deg);
-}
-
-.line14 {
-	transform: rotate(155deg);
-}
-
-.line15 {
-	transform: rotate(160deg);
-}
-
-.line16 {
-	transform: rotate(165deg);
-}
-
-.line17 {
-	transform: rotate(170deg);
-}
-
-.line18 {
-	transform: rotate(175deg);
-}
-
-.line19 {
-	transform: rotate(180deg);
-}
-
-.line20 {
-	transform: rotate(185deg);
-}
-
-.line21 {
-	transform: rotate(190deg);
-}
-
-.line22 {
-	transform: rotate(195deg);
-}
-
-.line23 {
-	transform: rotate(200deg);
-}
-
-.line24 {
-	transform: rotate(205deg);
-}
-
-.line25 {
-	transform: rotate(210deg);
-}
-
-.line26 {
-	transform: rotate(215deg);
-}
-
-.line27 {
-	transform: rotate(220deg);
-}
-
-.line28 {
-	transform: rotate(225deg);
-}
-
-.line29 {
-	transform: rotate(230deg);
-}
-
-.line30 {
-	transform: rotate(235deg);
-}
-
-.line31 {
-	transform: rotate(240deg);
-}
-
-.line32 {
-	transform: rotate(245deg);
-}
-
-.line33 {
-	transform: rotate(250deg);
-}
-
-.line34 {
-	transform: rotate(255deg);
-}
-
-.line35 {
-	transform: rotate(260deg);
 }
 
 .aboutTitle {
-	width: 600px;
-	height: 80px;
-	// border: 4px solid black;
-	// outline: 4px solid white;
-	background-color: white;
-	// box-shadow: 10px 10px rgba(42,42,41, 0.1);
+	width: 80%;
+	max-width: 1000px;
 	margin: 0 auto;
-	// position: absolute;
-	// top: 94%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	width: 100%;
 	
-	h3 {
+	h2 {
 		text-align: center;
+		margin: 2rem 0;
 	}
 }

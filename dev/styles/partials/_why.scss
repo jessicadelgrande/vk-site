@@ -1,5 +1,5 @@
-.whySection {
-	margin: 3rem auto;
+.wrapper.whySection {
+	margin-bottom: 200px;
 }
 
 .whySectionTitle h2 {
@@ -8,16 +8,35 @@
 
 .uglyContainer {
 	display: flex;
+	margin-top: 3rem;
 
+	@include bp(lrg) {
+		flex-direction: column;
+	}
 }
 
 .uglyTitle,
 .uglyContent {
 	width: 50%;
+
+	@include bp(lrg) {
+		width: 90%;
+	}
+}
+
+.uglyTitle {
+	font-size: 3rem;
+	letter-spacing: 3px;
+	line-height: 1.3;
+	align-self: center;
+}
+
+.uglyContent {
+	padding-left: 5%;
 }
 
 .whyDataContainer {
-	margin-top: 2rem;
+	margin: 6rem auto;
 	display: flex;
 	align-items: center;
 }
@@ -34,6 +53,16 @@
 	background-position: center;
 	background-repeat: no-repeat;
 	margin: 0 auto;
+
+	@include bp(lrg) {
+		width: 150px;
+		height: 150px;
+	}
+
+	@include bp(sml) {
+		width: 100px;
+		height: 100px;
+	}
 }
 
 .whyIcon-startups {
@@ -46,4 +75,19 @@
 
 .whyIcon-ceo {
 	background-image: url("../../assets/woman-muslim.svg");
+}
+
+.whyDataText {
+	padding-left: 5%;
+
+	@include bp(lrg) {
+		width: 70%;
+	}
+
+	p {
+
+		@include bp(sml) {
+			display: none;
+		}
+	}
 }

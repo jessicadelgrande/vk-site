@@ -10,3 +10,16 @@ $( ".provideText-tools" ).click(function() {
 $( ".provideText-roleModels" ).click(function() {
 	$( ".provideHidden-roleModels" ).slideToggle();
 });
+
+// SPONSORS - SLIDE-DOWN TEXT BLOCKS
+$( ".sponsorText-lighthouse" ).click(function() {
+	$( ".sponsorHidden-lighthouse" ).slideToggle();
+});
+
+$( ".sponsorText-nodeday" ).click(function() {
+	$( ".sponsorHidden-nodeday" ).slideToggle();
+});
+
+$( ".sponsorText-enactus" ).click(function() {
+	$( ".sponsorHidden-enactus" ).slideToggle();
+});

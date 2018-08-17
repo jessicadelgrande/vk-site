@@ -1,18 +1,40 @@
-.sectionHeader h3 {
+.sponsorSection.wrapper {
+	margin-bottom: 200px;
+}
+
+.sectionHeader {
+	margin: 0 auto;
+}
+
+.sponsorSectionTitle h2 {
 	text-align: center;
+}
+
+.sectionOverview {
+	margin: 0 auto;
 }
 
 .sponsorLogoContainer {
 	width: 90%;
 	display: flex;
+	flex-flow: row wrap;
 	justify-content: space-between;
-	align-items: center;
-	margin: 0 auto;
+	margin: 6rem  auto;
+}
+
+.sponsorLogoBlock {
+	width: 30%;
+	min-width: 200px;
+
+	@include bp(sml) {
+		width: 100%;
+		margin-bottom: 4rem;
+	}
 }
 
 .sponsorLogo {
 	width: 200px;
-	height: 120px;
+	height: 200px;
 	background-size: contain;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -20,13 +42,37 @@
 }
 
 .sponsorLogo-lighthouse {
-	background-image: url("../../assets/LighthouseLabs.png");
+	background-image: url("../../assets/lighthouse_square_new.png");
 }
 
-.sponsorLogo-telus {
-	background-image: url("../../assets/Telus.png");
+.sponsorLogo-nodeday {
+	background-image: url("../../assets/NodeDayToronto.jpg");
 }
 
-.sponsorLogo-node {
-	background-image: url("../../../assets/Nodejs.png");
+.sponsorLogo-enactus {
+	background-image: url("../../assets/enactus.png");
+}
+
+.sponsorText h3 {
+	text-align: center;
+	font-size: 1.5rem;
+	margin-top: 1rem;
+}
+
+.sponsorText-lighthouse,
+.sponsorText-nodeday,
+.sponsorText-enactus {
+	cursor: pointer;
+
+	&:hover {
+		color: red;
+	}
+}
+
+.sponsorHidden {
+	display: none;
+
+	p {
+		text-align: center;
+	}
 }

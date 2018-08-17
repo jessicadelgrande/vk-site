@@ -1,0 +1,59 @@
+.joinSection {
+	background-color: $bg-yellow;
+	padding: 200px 0px;
+	margin-bottom: 200px;
+}
+
+.sectionOverview.joinOverview {
+	max-width: 600px;
+
+	@include bp(lrg) {
+		max-width: 80%;
+	}
+}
+
+.joinSectionTitle h2 {
+	text-align: center;
+}
+
+.buttonContainer {
+	display: flex;
+	justify-content: center;
+
+	@include bp(xsml) {
+		flex-direction: column;
+		align-items: center;
+	}
+}
+
+.peopleContainer {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.personIcon {
+	width: 200px;
+	height: 200px;
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+	margin: 0 auto;
+
+	@include bp(lrg) {
+		width: 150px;
+		height: 150px;
+	}
+}
+
+.person1 {
+	background-image: url("../../assets/woman-shortHair.svg");
+}
+
+.person2 {
+	background-image: url("../../assets/woman-shortHair2.svg");
+}
+
+.person3 {
+		background-image: url("../../assets/man-shortHair.svg");
+}

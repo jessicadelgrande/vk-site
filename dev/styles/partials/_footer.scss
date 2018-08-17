@@ -1,0 +1,47 @@
+footer {
+	background-color: rgba(48, 187, 187, 0.3);
+	padding: 200px 0;
+
+	h2 {
+		font-family: $vkFont;
+		text-align: center;
+	}
+
+	h4 {
+		text-align: center;
+		max-width: 600px;
+		margin: 0 auto;
+	}
+}
+
+.titleBlock h4 {
+
+	@include bp(sml) {
+		width: 85%;
+	}
+}
+
+.socialBlock {
+	margin-top: 3rem;
+	height: 100px;
+	text-align: center;
+}
+
+.socialBlock a {
+	transition: all 0.3s ease;
+
+	&:link,
+	&:visited {
+		color: black;
+	} 
+
+	&:hover,
+	&:active {
+		color: #fff;
+	}
+}
+
+i {
+	font-size: 5rem;
+	margin: 1rem;
+}
