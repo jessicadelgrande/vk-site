@@ -220,7 +220,7 @@ header {
 
 .buildingIcon1 {
   background-image: url("../../assets/apartment1.svg"); }
-  @media (max-width: 500px) {
+  @media (max-width: 680px) {
     .buildingIcon1 {
       display: none; } }
 
@@ -549,12 +549,13 @@ header {
   width: 90%;
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-between;
-  margin: 6rem  auto; }
+  justify-content: space-around;
+  margin: 6rem auto; }
 
 .sponsorLogoBlock {
-  width: 30%;
-  min-width: 200px; }
+  width: 200px;
+  min-width: 200px;
+  margin: 40px; }
   @media (max-width: 500px) {
     .sponsorLogoBlock {
       width: 100%;
@@ -577,18 +578,20 @@ header {
 .sponsorLogo-enactus {
   background-image: url("../../assets/enactus.png"); }
 
+.sponsorLogo-wework {
+  background-image: url("../../assets/WeWork-Logo.jpg"); }
+
+.sponsorLogo-tchc {
+  background-image: url("../../assets/tchc_400x400.jpg"); }
+
 .sponsorText h3 {
   text-align: center;
   font-size: 1.5rem;
   margin-top: 1rem; }
 
-.sponsorText-lighthouse,
-.sponsorText-nodeday,
-.sponsorText-enactus {
+.sponsorText {
   cursor: pointer; }
-  .sponsorText-lighthouse:hover,
-  .sponsorText-nodeday:hover,
-  .sponsorText-enactus:hover {
+  .sponsorText:hover {
     color: red; }
 
 .sponsorHidden {
@@ -649,13 +652,13 @@ h1 {
       font-size: 5rem; } }
   @media (max-width: 680px) {
     h1 {
-      font-size: 3.5rem; } }
+      font-size: 4rem; } }
   @media (max-width: 500px) {
     h1 {
-      font-size: 2.5rem; } }
+      font-size: 3rem; } }
   @media (max-width: 440px) {
     h1 {
-      font-size: 2rem; } }
+      font-size: 2.3rem; } }
 
 h2 {
   font-family: "nobelBold", sans-serif;

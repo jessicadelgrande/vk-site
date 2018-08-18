@@ -18,13 +18,14 @@
 	width: 90%;
 	display: flex;
 	flex-flow: row wrap;
-	justify-content: space-between;
-	margin: 6rem  auto;
+	justify-content: space-around;
+	margin: 6rem auto;
 }
 
 .sponsorLogoBlock {
-	width: 30%;
+	width: 200px;
 	min-width: 200px;
+	margin: 40px;
 
 	@include bp(sml) {
 		width: 100%;
@@ -53,15 +54,21 @@
 	background-image: url("../../assets/enactus.png");
 }
 
+.sponsorLogo-wework {
+	background-image: url("../../assets/WeWork-Logo.jpg");
+}
+
+.sponsorLogo-tchc {
+	background-image: url("../../assets/tchc_400x400.jpg");
+}
+
 .sponsorText h3 {
 	text-align: center;
 	font-size: 1.5rem;
 	margin-top: 1rem;
 }
 
-.sponsorText-lighthouse,
-.sponsorText-nodeday,
-.sponsorText-enactus {
+.sponsorText {
 	cursor: pointer;
 
 	&:hover {

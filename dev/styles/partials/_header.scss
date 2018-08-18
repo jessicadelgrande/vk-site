@@ -65,7 +65,7 @@ header {
 .buildingIcon1 {
 	background-image: url("../../assets/apartment1.svg");
 
-	@include bp(sml) {
+	@include bp(med) {
 		display: none;
 	}
 }

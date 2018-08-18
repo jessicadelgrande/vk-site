@@ -25,3 +25,11 @@ $(".sponsorText-nodeday").click(function () {
 $(".sponsorText-enactus").click(function () {
 	$(".sponsorHidden-enactus").slideToggle();
 });
+
+$(".sponsorText-wework").click(function () {
+	$(".sponsorHidden-wework").slideToggle();
+});
+
+$(".sponsorText-tchc").click(function () {
+	$(".sponsorHidden-tchc").slideToggle();
+});
