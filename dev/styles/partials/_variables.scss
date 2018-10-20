@@ -1,12 +1,15 @@
 $vkFont: 'Bungee', sans-serif; // Venture Kids logo font
-$fontStack: 'nobelReg', sans-serif;
-$fs-light: 'nobelLight', sans-serif;
-$fs-bold: 'nobelBold', sans-serif;
+$fontStack: 'avenirReg', sans-serif;
+$fs-light: 'avenirLight', sans-serif;
+$fs-bold: 'avenirBold', sans-serif;
+
+$vk-shadow_blue: 0.3rem 0.3rem rgba(48, 187, 187, 0.3);
 
 $border_std: 4px solid black;
 $bg-yellow: #fcf3aa;
 
 // MEDIA
+$i5: ( max: 350px );
 $mini: ( max: 400px );
 $xsml: ( max: 440px );
 $sml: ( max: 500px );

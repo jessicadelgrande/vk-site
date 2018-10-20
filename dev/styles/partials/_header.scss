@@ -44,7 +44,16 @@ header {
 	}
 }
 
-.buildingsContainer {
+// .buildingsContainer {
+// 	width: 100%;
+// 	max-width: 1200px;
+// 	display: flex;
+// 	justify-content: space-around;
+// 	position: absolute;
+// 	top: 65%;
+// }
+
+.portholeContainer {
 	width: 100%;
 	max-width: 1200px;
 	display: flex;
@@ -53,51 +62,75 @@ header {
 	top: 65%;
 }
 
-.buildingIcon {
+// .buildingIcon {
+// 	width: 200px;
+// 	height: 200px;
+// 	background-size: contain;
+// 	background-position: bottom;
+// 	background-repeat: no-repeat;
+// 	margin: 0 auto;
+// }
+
+.portholeIcon {
 	width: 200px;
 	height: 200px;
-	background-size: contain;
-	background-position: bottom;
+	background-size: cover;
+	background-position: center;
 	background-repeat: no-repeat;
 	margin: 0 auto;
+	border: $border_std;
+	border-radius: 50%;
+	box-shadow: $vk-shadow_blue;
 }
 
-.buildingIcon1 {
-	background-image: url("../../assets/apartment1.svg");
-
-	@include bp(med) {
-		display: none;
-	}
+.portholeIcon1 {
+	background-image: url("../../assets/ventureKids_photo.jpg");
 }
 
-.buildingIcon2 {
-	background-image: url("../../assets/apartment2.svg");
-
-	@include bp(sml) {
-		display: none;
-	}
+.portholeIcon2 {
+	background-image: url("../../assets/Screen Shot 2018-10-19 at 9.53.55 PM.png");
 }
 
-.buildingIcon3 {
-	background-image: url("../../assets/apartment3.svg");
-
-	@include bp(sml) {
-		display: none;
-	}
+.portholeIcon3 {
+	background-image: url("../../assets/VentureKids_Art_Tech_Collide 042-cropped.jpg");
 }
 
-.buildingIcon4 {
-	background-image: url("../../assets/apartment4.svg");
+// .buildingIcon1 {
+// 	background-image: url("../../assets/apartment1.svg");
 
-	@include bp(xsml) {
-		display: none;
-	}
-}
+// 	@include bp(med) {
+// 		display: none;
+// 	}
+// }
 
-.buildingIcon5 {
-	background-image: url("../../assets/woman-computer.svg");
-}
+// .buildingIcon2 {
+// 	background-image: url("../../assets/apartment2.svg");
 
-.buildingIcon6 {
-	background-image: url("../../assets/apartment5.svg");
-}
+// 	@include bp(sml) {
+// 		display: none;
+// 	}
+// }
+
+// .buildingIcon3 {
+// 	background-image: url("../../assets/apartment3.svg");
+
+// 	@include bp(sml) {
+// 		display: none;
+// 	}
+// }
+
+// .buildingIcon4 {
+// 	background-image: url("../../assets/apartment4.svg");
+
+// 	@include bp(xsml) {
+// 		display: none;
+// 	}
+// }
+
+// .buildingIcon5 {
+// 	background-image: url("../../assets/woman-computer.svg");
+// }
+
+// .buildingIcon6 {
+// 	background-image: url("../../assets/apartment5.svg");
+// }

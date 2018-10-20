@@ -14,18 +14,18 @@
 
 // FONTS
 @font-face {
-	font-family: nobelReg;
-	src: url("../../assets/fonts/nobel-regular.woff") format("woff");
+	font-family: avenirReg;
+	src: url("../../assets/fonts/Avenir-Roman.woff") format("woff");
 }
 
 @font-face {
-	font-family: nobelLight;
-	src: url("../../assets/fonts/nobel-light.woff") format("woff");
+	font-family: avenirLight;
+	src: url("../../assets/fonts/avenir_35_light.woff") format("woff");
 }
 
 @font-face {
-	font-family: nobelBold;
-	src: url("../../assets/fonts/nobel-bold.woff") format("woff");
+	font-family: avenirBold;
+	src: url("../../assets/fonts/Avenir-bold.woff") format("woff");
 }
 
 // BASE STYLES
@@ -33,7 +33,7 @@ h1 {
 	font-family: $vkFont;
 	font-size: 6rem;
 	margin: 0px 0px 1rem 0px;
-	text-shadow: 0.3rem 0.3rem rgba(48, 187, 187, 0.3);
+	text-shadow: $vk-shadow_blue;
 
 	@include bp(lrg) {
 		font-size: 5rem;
@@ -47,7 +47,7 @@ h1 {
 		font-size: 3rem;
 	}
 
-	@include bp(xsml) {
+	@include bp(i5) {
 		font-size: 2.3rem;
 	}
 }
@@ -118,7 +118,7 @@ hr {
 	border: 3px solid black;
 	padding: 1rem 2rem;
 	text-transform: uppercase;
-	font-family: 'nobelBold';
+	font-family: $fs-bold;
 	transition: all 0.3s ease;
 
 	&:hover,

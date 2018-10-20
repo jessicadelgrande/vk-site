@@ -202,7 +202,7 @@ header {
     .vkSign-subhead {
       max-width: 80%; } }
 
-.buildingsContainer {
+.portholeContainer {
   width: 100%;
   max-width: 1200px;
   display: flex;
@@ -210,43 +210,25 @@ header {
   position: absolute;
   top: 65%; }
 
-.buildingIcon {
+.portholeIcon {
   width: 200px;
   height: 200px;
-  background-size: contain;
-  background-position: bottom;
+  background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
-  margin: 0 auto; }
+  margin: 0 auto;
+  border: 4px solid black;
+  border-radius: 50%;
+  box-shadow: 0.3rem 0.3rem rgba(48, 187, 187, 0.3); }
 
-.buildingIcon1 {
-  background-image: url("../../assets/apartment1.svg"); }
-  @media (max-width: 680px) {
-    .buildingIcon1 {
-      display: none; } }
+.portholeIcon1 {
+  background-image: url("../../assets/ventureKids_photo.jpg"); }
 
-.buildingIcon2 {
-  background-image: url("../../assets/apartment2.svg"); }
-  @media (max-width: 500px) {
-    .buildingIcon2 {
-      display: none; } }
+.portholeIcon2 {
+  background-image: url("../../assets/Screen Shot 2018-10-19 at 9.53.55 PM.png"); }
 
-.buildingIcon3 {
-  background-image: url("../../assets/apartment3.svg"); }
-  @media (max-width: 500px) {
-    .buildingIcon3 {
-      display: none; } }
-
-.buildingIcon4 {
-  background-image: url("../../assets/apartment4.svg"); }
-  @media (max-width: 440px) {
-    .buildingIcon4 {
-      display: none; } }
-
-.buildingIcon5 {
-  background-image: url("../../assets/woman-computer.svg"); }
-
-.buildingIcon6 {
-  background-image: url("../../assets/apartment5.svg"); }
+.portholeIcon3 {
+  background-image: url("../../assets/VentureKids_Art_Tech_Collide 042-cropped.jpg"); }
 
 .aboutSection {
   display: flex;
@@ -410,7 +392,7 @@ header {
 .provideHidden {
   display: none; }
   .provideHidden p {
-    text-align: center; }
+    text-align: left; }
 
 .wrapper.whySection {
   margin-bottom: 200px; }
@@ -597,11 +579,11 @@ header {
 .sponsorHidden {
   display: none; }
   .sponsorHidden p {
-    text-align: center; }
+    text-align: left; }
 
 footer {
   background-color: rgba(48, 187, 187, 0.3);
-  padding: 200px 0; }
+  padding: 100px 0; }
   footer h2 {
     font-family: "Bungee", sans-serif;
     text-align: center; }
@@ -631,16 +613,16 @@ i {
   margin: 1rem; }
 
 @font-face {
-  font-family: nobelReg;
-  src: url("../../assets/fonts/nobel-regular.woff") format("woff"); }
+  font-family: avenirReg;
+  src: url("../../assets/fonts/Avenir-Roman.woff") format("woff"); }
 
 @font-face {
-  font-family: nobelLight;
-  src: url("../../assets/fonts/nobel-light.woff") format("woff"); }
+  font-family: avenirLight;
+  src: url("../../assets/fonts/avenir_35_light.woff") format("woff"); }
 
 @font-face {
-  font-family: nobelBold;
-  src: url("../../assets/fonts/nobel-bold.woff") format("woff"); }
+  font-family: avenirBold;
+  src: url("../../assets/fonts/Avenir-bold.woff") format("woff"); }
 
 h1 {
   font-family: "Bungee", sans-serif;
@@ -656,12 +638,12 @@ h1 {
   @media (max-width: 500px) {
     h1 {
       font-size: 3rem; } }
-  @media (max-width: 440px) {
+  @media (max-width: 350px) {
     h1 {
       font-size: 2.3rem; } }
 
 h2 {
-  font-family: "nobelBold", sans-serif;
+  font-family: "avenirBold", sans-serif;
   font-size: 3.5rem;
   text-transform: uppercase;
   margin: 0px 0px 2rem 0px; }
@@ -673,7 +655,7 @@ h2 {
       font-size: 2rem; } }
 
 h3 {
-  font-family: "nobelLight", sans-serif;
+  font-family: "avenirLight", sans-serif;
   font-size: 2rem;
   line-height: 2rem;
   letter-spacing: 0.1rem;
@@ -681,7 +663,7 @@ h3 {
   margin: 0px; }
 
 h4 {
-  font-family: "nobelLight", sans-serif;
+  font-family: "avenirLight", sans-serif;
   font-weight: 400;
   font-size: 1.4rem;
   letter-spacing: 0.4px;
@@ -692,7 +674,7 @@ h4 {
       font-size: 1.2rem; } }
 
 body {
-  font-family: "nobelLight", sans-serif;
+  font-family: "avenirLight", sans-serif;
   position: relative;
   width: 100%;
   height: 100%; }
@@ -717,7 +699,7 @@ hr {
   border: 3px solid black;
   padding: 1rem 2rem;
   text-transform: uppercase;
-  font-family: 'nobelBold';
+  font-family: "avenirBold", sans-serif;
   transition: all 0.3s ease; }
   .btn-std:hover, .btn-std:active {
     box-shadow: 5px 5px 0px -1px #2e2e2e; }

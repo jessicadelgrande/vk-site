@@ -1,5 +1,11 @@
 // MEDIA QUERIES
 @mixin bp($size) {
+	@if ($size == 'i5') {
+		@media (max-width: 350px) { 
+			@content; 
+		}
+	}
+
 	@if ($size == 'mini') {
 		@media (max-width: 400px) { 
 			@content; 
