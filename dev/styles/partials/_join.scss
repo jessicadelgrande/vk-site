@@ -1,6 +1,13 @@
 .joinSection {
 	background-color: $bg-yellow;
-	padding: 200px 0px;
+}
+
+.joinSection-participate {
+	padding: 200px 0 100px 0;
+}
+
+.joinSection-donate {
+	padding: 100px 0 200px 0;
 	margin-bottom: 200px;
 }
 
@@ -55,5 +62,11 @@
 }
 
 .person3 {
-		background-image: url("../../assets/man-shortHair.svg");
+	background-image: url("../../assets/man-shortHair.svg");
+}
+
+.personIcon.person4 {
+	background-image: url("../../assets/woman-computer.svg");
+	width: 230px;
+	height: 230px;
 }

@@ -2,6 +2,7 @@
 @import "partials/variables";
 @import "partials/mixins";
 
+@import "partials/nav";
 @import "partials/header";
 @import "partials/about";
 @import "partials/whatWeTeach";
@@ -32,8 +33,8 @@
 h1 {
 	font-family: $vkFont;
 	font-size: 6rem;
-	margin: 0px 0px 1rem 0px;
-	text-shadow: $vk-shadow_blue;
+	margin: 0px;
+	text-shadow: $vk_shadow-blue;
 
 	@include bp(lrg) {
 		font-size: 5rem;

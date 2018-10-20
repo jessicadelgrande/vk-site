@@ -1,0 +1,53 @@
+nav {
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	background-color: white;
+}
+
+.navContainer {
+	padding: 24px 48px 16px 0;
+	text-align: right;
+	display: flex;
+	justify-content: space-between;
+	transition: all .5s cubic-bezier(.93, .71, .58, 1);
+}
+
+.navRobot {
+	background-image: url("../../assets/robot_logo.png");
+	background-size: 48px;
+	width: 48px;
+	height: 48px;
+	margin-left: 48px;
+}
+
+.navLink {
+	font-family: $fs-light;
+	font-size: 14px;
+	list-style-type: none;
+	display: inline;
+	text-transform: uppercase;
+	letter-spacing: 0.1rem;
+	margin-left: 24px;
+	padding-bottom: 4px;
+	cursor: pointer;
+	transition: all .5s cubic-bezier(.93, .71, .58, 1);
+	border-bottom: 3px solid transparent;
+
+	a {
+		text-decoration: none;
+		color: black;
+
+		&:visited,
+		&:hover,
+		&:active {
+			text-decoration: none;
+			color: black;
+		}
+	}
+
+	&:hover {
+		border-bottom: 3px solid rgba(48, 187, 187, 0.3);
+	}
+}

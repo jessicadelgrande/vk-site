@@ -5,19 +5,19 @@ header {
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
-	margin-bottom: 50px;
-	position: relative;
+	margin: 0 auto;
+	padding: 124px 0 16px 0;
+	background-color: white;
 }
 
 .headerContainer {
 	width: 100%;
 	height: 100vh;
-	overflow: hidden;
 }
 
 .vkTitleContainer {
 	width: 100%;
-	height: 60%;
+	height: 40%;
 	display: flex;
 	flex-flow: column nowrap;
 	justify-content: center;
@@ -26,16 +26,15 @@ header {
 
 .vkSign {
 	width: auto;
-	background-color: #fff;
+	// background-color: $bg-blue;
 	text-align: center;
-	padding: 1rem;
 }
 
 .vkSign-subhead {
 	justify-content: center;
 	align-items: center;
 	text-align: center;
-	background-color: white;
+	// background-color: $bg-blue;
 	padding: 1rem;
 	max-width: 600px;
 
@@ -44,43 +43,26 @@ header {
 	}
 }
 
-// .buildingsContainer {
-// 	width: 100%;
-// 	max-width: 1200px;
-// 	display: flex;
-// 	justify-content: space-around;
-// 	position: absolute;
-// 	top: 65%;
-// }
-
 .portholeContainer {
 	width: 100%;
-	max-width: 1200px;
+	max-width: 800px;
 	display: flex;
 	justify-content: space-around;
-	position: absolute;
-	top: 65%;
+	margin: 48px auto;
 }
 
-// .buildingIcon {
-// 	width: 200px;
-// 	height: 200px;
-// 	background-size: contain;
-// 	background-position: bottom;
-// 	background-repeat: no-repeat;
-// 	margin: 0 auto;
-// }
-
 .portholeIcon {
-	width: 200px;
-	height: 200px;
+	width: 180px;
+	min-width: 180px;
+	height: 180px;
+	min-height: 180px;
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
 	margin: 0 auto;
 	border: $border_std;
 	border-radius: 50%;
-	box-shadow: $vk-shadow_blue;
+	box-shadow: $vk_shadow-yellow
 }
 
 .portholeIcon1 {
@@ -94,43 +76,3 @@ header {
 .portholeIcon3 {
 	background-image: url("../../assets/VentureKids_Art_Tech_Collide 042-cropped.jpg");
 }
-
-// .buildingIcon1 {
-// 	background-image: url("../../assets/apartment1.svg");
-
-// 	@include bp(med) {
-// 		display: none;
-// 	}
-// }
-
-// .buildingIcon2 {
-// 	background-image: url("../../assets/apartment2.svg");
-
-// 	@include bp(sml) {
-// 		display: none;
-// 	}
-// }
-
-// .buildingIcon3 {
-// 	background-image: url("../../assets/apartment3.svg");
-
-// 	@include bp(sml) {
-// 		display: none;
-// 	}
-// }
-
-// .buildingIcon4 {
-// 	background-image: url("../../assets/apartment4.svg");
-
-// 	@include bp(xsml) {
-// 		display: none;
-// 	}
-// }
-
-// .buildingIcon5 {
-// 	background-image: url("../../assets/woman-computer.svg");
-// }
-
-// .buildingIcon6 {
-// 	background-image: url("../../assets/apartment5.svg");
-// }

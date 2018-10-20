@@ -3,9 +3,13 @@ $fontStack: 'avenirReg', sans-serif;
 $fs-light: 'avenirLight', sans-serif;
 $fs-bold: 'avenirBold', sans-serif;
 
-$vk-shadow_blue: 0.3rem 0.3rem rgba(48, 187, 187, 0.3);
+$vk_shadow-blue: 0.3rem 0.3rem rgba(48, 187, 187, 0.3);
+$vk_shadow-yellow: 0.3rem 0.3rem #fcf3aa;
+$vk_shadow-white: 0.3rem 0.3rem white;
 
 $border_std: 4px solid black;
+
+$bg-blue: rgba(48, 187, 187, 0.3);
 $bg-yellow: #fcf3aa;
 
 // MEDIA

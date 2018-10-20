@@ -162,6 +162,48 @@ input::-moz-focus-inner {
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
+nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  background-color: white; }
+
+.navContainer {
+  padding: 24px 48px 16px 0;
+  text-align: right;
+  display: flex;
+  justify-content: space-between;
+  transition: all 0.5s cubic-bezier(0.93, 0.71, 0.58, 1); }
+
+.navRobot {
+  background-image: url("../../assets/robot_logo.png");
+  background-size: 48px;
+  width: 48px;
+  height: 48px;
+  margin-left: 48px; }
+
+.navLink {
+  font-family: "avenirLight", sans-serif;
+  font-size: 14px;
+  list-style-type: none;
+  display: inline;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  margin-left: 24px;
+  padding-bottom: 4px;
+  cursor: pointer;
+  transition: all 0.5s cubic-bezier(0.93, 0.71, 0.58, 1);
+  border-bottom: 3px solid transparent; }
+  .navLink a {
+    text-decoration: none;
+    color: black; }
+    .navLink a:visited, .navLink a:hover, .navLink a:active {
+      text-decoration: none;
+      color: black; }
+  .navLink:hover {
+    border-bottom: 3px solid rgba(48, 187, 187, 0.3); }
+
 header {
   height: 100vh;
   width: 100vw;
@@ -169,17 +211,17 @@ header {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-bottom: 50px;
-  position: relative; }
+  margin: 0 auto;
+  padding: 124px 0 16px 0;
+  background-color: white; }
 
 .headerContainer {
   width: 100%;
-  height: 100vh;
-  overflow: hidden; }
+  height: 100vh; }
 
 .vkTitleContainer {
   width: 100%;
-  height: 60%;
+  height: 40%;
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
@@ -187,15 +229,12 @@ header {
 
 .vkSign {
   width: auto;
-  background-color: #fff;
-  text-align: center;
-  padding: 1rem; }
+  text-align: center; }
 
 .vkSign-subhead {
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-color: white;
   padding: 1rem;
   max-width: 600px; }
   @media (max-width: 680px) {
@@ -204,22 +243,23 @@ header {
 
 .portholeContainer {
   width: 100%;
-  max-width: 1200px;
+  max-width: 800px;
   display: flex;
   justify-content: space-around;
-  position: absolute;
-  top: 65%; }
+  margin: 48px auto; }
 
 .portholeIcon {
-  width: 200px;
-  height: 200px;
+  width: 180px;
+  min-width: 180px;
+  height: 180px;
+  min-height: 180px;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   margin: 0 auto;
   border: 4px solid black;
   border-radius: 50%;
-  box-shadow: 0.3rem 0.3rem rgba(48, 187, 187, 0.3); }
+  box-shadow: 0.3rem 0.3rem #fcf3aa; }
 
 .portholeIcon1 {
   background-image: url("../../assets/ventureKids_photo.jpg"); }
@@ -255,8 +295,8 @@ header {
     text-align: center;
     margin: 2rem 0; }
 
-.whatSection {
-  margin-top: 200px; }
+.wrapper.whatSection {
+  margin: 200px auto; }
 
 .whatSectionTitle {
   display: inline-block;
@@ -338,6 +378,10 @@ header {
   flex-direction: column;
   justify-content: center; }
 
+.provideSection {
+  padding: 200px 0;
+  background-color: rgba(48, 187, 187, 0.3); }
+
 .provideSectionTitle {
   text-align: center; }
 
@@ -345,7 +389,8 @@ header {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
-  margin-top: 6rem; }
+  margin: 6rem auto 0 auto;
+  max-width: 800px; }
 
 .provideBlock {
   width: 30%; }
@@ -395,7 +440,7 @@ header {
     text-align: left; }
 
 .wrapper.whySection {
-  margin-bottom: 200px; }
+  margin: 200px auto; }
 
 .whySectionTitle h2 {
   text-align: center; }
@@ -468,8 +513,13 @@ header {
       display: none; } }
 
 .joinSection {
-  background-color: #fcf3aa;
-  padding: 200px 0px;
+  background-color: #fcf3aa; }
+
+.joinSection-participate {
+  padding: 200px 0 100px 0; }
+
+.joinSection-donate {
+  padding: 100px 0 200px 0;
   margin-bottom: 200px; }
 
 .sectionOverview.joinOverview {
@@ -515,6 +565,11 @@ header {
 .person3 {
   background-image: url("../../assets/man-shortHair.svg"); }
 
+.personIcon.person4 {
+  background-image: url("../../assets/woman-computer.svg");
+  width: 230px;
+  height: 230px; }
+
 .sponsorSection.wrapper {
   margin-bottom: 200px; }
 
@@ -535,7 +590,7 @@ header {
   margin: 6rem auto; }
 
 .sponsorLogoBlock {
-  width: 200px;
+  width: 224px;
   min-width: 200px;
   margin: 40px; }
   @media (max-width: 500px) {
@@ -560,8 +615,8 @@ header {
 .sponsorLogo-enactus {
   background-image: url("../../assets/enactus.png"); }
 
-.sponsorLogo-wework {
-  background-image: url("../../assets/WeWork-Logo.jpg"); }
+.sponsorLogo-communihelp {
+  background-image: url("../../assets/communihelp-logo.png"); }
 
 .sponsorLogo-tchc {
   background-image: url("../../assets/tchc_400x400.jpg"); }
@@ -627,7 +682,7 @@ i {
 h1 {
   font-family: "Bungee", sans-serif;
   font-size: 6rem;
-  margin: 0px 0px 1rem 0px;
+  margin: 0px;
   text-shadow: 0.3rem 0.3rem rgba(48, 187, 187, 0.3); }
   @media (max-width: 850px) {
     h1 {
