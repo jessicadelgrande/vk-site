@@ -13,82 +13,226 @@ nav {
 	position: relative;
 }
 
-.burgerContainer {
-	width: 54px;
-	height: 54px;
-	border-radius: 50%;
-	background-color: white;
-	position: fixed;
-	right: 48px;
-	top: 24px;
-}
-
-.fa.fa-bars {
-	transition: all .5s cubic-bezier(.93, .71, .58, 1);
-	position: fixed;
-	top: 20px;
-	right: 45px;
-	font-size: 2rem;
-}
-
-// .burger {
-// 	opacity: 1;
-// 	transform: scale(1);
-// 	top: 24px;
-// 	right: 48px;
-// 	width: 36px;
-// 	height: 36px;
-// 	border: 1px solid red;
-// }
-
 .navRobot {
 	background-image: url("../../assets/robot_logo.png");
 	background-size: 42px;
 	background-repeat: no-repeat;
 	background-position: center;
 	background-color: white;
-	border-radius: 50%;	
+	border-radius: 50%; 
 	width: 54px;
 	height: 54px;
 	margin-left: 48px;
 }
 
-.navLinkContainer {
-	transition: all .5s cubic-bezier(.93, .71, .58, 1);
-	transform: scale(1);
+.burgerContainer {
+	position: fixed;
+	top: 24px;
+	right: 48px;
+	height: 54px;
+	width: 54px;
+	border-radius: 50%;
+	cursor: pointer;
+	z-index: 100;
+	transition: opacity .25s ease;
+	background-color: white;
+	
+	&:hover {
+
+		.bar1 {
+			background-color: $bg-blue;
+		}
+
+		.bar2 {
+			background-color: $bg-blue;
+		}
+	
+		.bar3 {
+			background-color: $bg-blue;
+		}	
+	}
+	
+	&.active {
+
+		.bar1 {
+			transform: translateY(11px) translateX(0) rotate(45deg);
+			background-color: $bg-blue;
+		}
+
+		.bar2 {
+			opacity: 0;
+			background-color: $bg-blue;
+		}
+	
+		.bar3 {
+			transform: translateY(-9px) translateX(0) rotate(-45deg);
+			background-color: $bg-blue;
+		}	
+	}
+
+	.bar {
+		background-color: black;
+		border-radius: 8px;
+		height: 4px;
+		width: 70%;
+		position: absolute;
+		top: 15px;
+		left: 8px;
+		transition:  all .35s ease;
+		cursor: pointer;
+		
+		&.bar2 {
+			top: 25px;
+		}
+		
+		&.bar3 {
+			top: 35px;
+		}
+	}
 }
 
-.shrink {
-	transform: scale(0);
-	opacity: 0;
+.navLinkContainer {
+	padding: 0 40px;
 }
 
 .navLink {
-	font-family: $fs-light;
-	font-size: 14px;
+	font-family: $fs-bold;
 	list-style-type: none;
 	display: inline;
-	text-transform: uppercase;
-	letter-spacing: 0.1rem;
-	margin-left: 24px;
-	padding-bottom: 4px;
 	cursor: pointer;
-	transition: all .5s cubic-bezier(.93, .71, .58, 1);
-	border-bottom: 3px solid transparent;
 
 	a {
 		text-decoration: none;
-		color: black;
+		color: white;
+		display: inline-block;
+		position: relative;
+		text-align: center;
+		text-transform: uppercase;
+		letter-spacing: 0.1rem;
+		font-size: 2.5rem;
+		overflow: hidden;
+		top: 5px;
+		padding-bottom: 4px;
+		transition: all 0.5s cubic-bezier(.93, .71, .58, 1);
+		border-bottom: 3px solid transparent;
+
+		@include bp(xsml) {
+			font-size: 2rem;
+		}
+
+		&:hover {
+			border-bottom: 3px solid white;
+		}
 
 		&:visited,
-		&:hover,
 		&:active {
 			text-decoration: none;
-			color: black;
+			color: white;
+		}
+
+		&:after {
+			content: '';
+			position: absolute;
+			background: white;
+			height: 2px;
+			width: 0%;
+			transform: translateX(-50%);
+			left: 50%;
+			bottom: 0;
+			transition: 0.35s ease;
+		}
+
+		&:hover:after,
+		&:focus:after,
+		&:active:after {
+			width: 100%;
+		}
+	}
+}
+
+.overlayContainer {
+	position: fixed;
+	background: $bg-overlay;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 0%;
+	opacity: 0;
+	visibility: hidden;
+	transition: opacity 0.35s, visibility 0.35s, height 0.35s;
+	overflow: hidden;
+	
+	&.open {
+		opacity: 1;
+		visibility: visible;
+		height: 100%;
+		
+		li {
+			animation: fadeIn 0.5s ease forwards;
 		}
 	}
 
-	&:hover {
-		border-bottom: 3px solid rgba(48, 187, 187, 0.3);
+	.overlay {
+		position: relative;
+		height: 70%;
+		top: 50%;
+		transform: translateY(-50%);
+		font-size: 50px;
+		font-family: $fontStack;
+		text-transform: uppercase;
+		text-align: center;
+	}
+
+	ul {
+		list-style: none;
+		padding: 0;
+		margin: 0 auto;
+		display: inline-block;
+		position: relative;
+		height: 100%; 
+		
+		li {
+			display: block;
+			height: 25%;
+			height: calc(100% / 4);
+			min-height: 50px;
+			position: relative;
+			opacity: 0;
+			
+			a {
+				display: block;
+				position: relative;
+				color: white;
+				text-decoration: none;
+				overflow: hidden;
+				
+				&:hover:after,
+				&:focus:after,
+				&:active:after {
+					 width: 100%;
+				}
+				
+				&:after {
+					content: '';
+					position: absolute;
+					bottom: 0;
+					left: 50%;
+					width: 0%;
+					transform: translateX(-50%);
+					height: 3px;
+					background: black;
+					transition: 0.35s;
+				}
+			}
+		}
+	}
+}
+
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
 	}
 }

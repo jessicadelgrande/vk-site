@@ -45,7 +45,7 @@ h1 {
 	}
 
 	@include bp(sml) {
-		font-size: 3rem;
+		font-size: 2.5rem;
 	}
 
 	@include bp(i5) {
@@ -132,4 +132,8 @@ hr {
 	width: 94vw;
 	max-width: 800px;
 	margin: 3rem auto;
+
+	@include bp(med) {
+		width: auto;
+	}
 }

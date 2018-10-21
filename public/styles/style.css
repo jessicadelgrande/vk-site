@@ -175,22 +175,6 @@ nav {
   justify-content: space-between;
   position: relative; }
 
-.burgerContainer {
-  width: 54px;
-  height: 54px;
-  border-radius: 50%;
-  background-color: white;
-  position: fixed;
-  right: 48px;
-  top: 24px; }
-
-.fa.fa-bars {
-  transition: all 0.5s cubic-bezier(0.93, 0.71, 0.58, 1);
-  position: fixed;
-  top: 20px;
-  right: 45px;
-  font-size: 2rem; }
-
 .navRobot {
   background-image: url("../../assets/robot_logo.png");
   background-size: 42px;
@@ -202,34 +186,154 @@ nav {
   height: 54px;
   margin-left: 48px; }
 
-.navLinkContainer {
-  transition: all 0.5s cubic-bezier(0.93, 0.71, 0.58, 1);
-  transform: scale(1); }
+.burgerContainer {
+  position: fixed;
+  top: 24px;
+  right: 48px;
+  height: 54px;
+  width: 54px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 100;
+  transition: opacity .25s ease;
+  background-color: white; }
+  .burgerContainer:hover .bar1 {
+    background-color: rgba(48, 187, 187, 0.3); }
+  .burgerContainer:hover .bar2 {
+    background-color: rgba(48, 187, 187, 0.3); }
+  .burgerContainer:hover .bar3 {
+    background-color: rgba(48, 187, 187, 0.3); }
+  .burgerContainer.active .bar1 {
+    transform: translateY(11px) translateX(0) rotate(45deg);
+    background-color: rgba(48, 187, 187, 0.3); }
+  .burgerContainer.active .bar2 {
+    opacity: 0;
+    background-color: rgba(48, 187, 187, 0.3); }
+  .burgerContainer.active .bar3 {
+    transform: translateY(-9px) translateX(0) rotate(-45deg);
+    background-color: rgba(48, 187, 187, 0.3); }
+  .burgerContainer .bar {
+    background-color: black;
+    border-radius: 8px;
+    height: 4px;
+    width: 70%;
+    position: absolute;
+    top: 15px;
+    left: 8px;
+    transition: all .35s ease;
+    cursor: pointer; }
+    .burgerContainer .bar.bar2 {
+      top: 25px; }
+    .burgerContainer .bar.bar3 {
+      top: 35px; }
 
-.shrink {
-  transform: scale(0);
-  opacity: 0; }
+.navLinkContainer {
+  padding: 0 40px; }
 
 .navLink {
-  font-family: "avenirLight", sans-serif;
-  font-size: 14px;
+  font-family: "avenirBold", sans-serif;
   list-style-type: none;
   display: inline;
-  text-transform: uppercase;
-  letter-spacing: 0.1rem;
-  margin-left: 24px;
-  padding-bottom: 4px;
-  cursor: pointer;
-  transition: all 0.5s cubic-bezier(0.93, 0.71, 0.58, 1);
-  border-bottom: 3px solid transparent; }
+  cursor: pointer; }
   .navLink a {
     text-decoration: none;
-    color: black; }
-    .navLink a:visited, .navLink a:hover, .navLink a:active {
+    color: white;
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    font-size: 2.5rem;
+    overflow: hidden;
+    top: 5px;
+    padding-bottom: 4px;
+    transition: all 0.5s cubic-bezier(0.93, 0.71, 0.58, 1);
+    border-bottom: 3px solid transparent; }
+    @media (max-width: 440px) {
+      .navLink a {
+        font-size: 2rem; } }
+    .navLink a:hover {
+      border-bottom: 3px solid white; }
+    .navLink a:visited, .navLink a:active {
       text-decoration: none;
-      color: black; }
-  .navLink:hover {
-    border-bottom: 3px solid rgba(48, 187, 187, 0.3); }
+      color: white; }
+    .navLink a:after {
+      content: '';
+      position: absolute;
+      background: white;
+      height: 2px;
+      width: 0%;
+      transform: translateX(-50%);
+      left: 50%;
+      bottom: 0;
+      transition: 0.35s ease; }
+    .navLink a:hover:after, .navLink a:focus:after, .navLink a:active:after {
+      width: 100%; }
+
+.overlayContainer {
+  position: fixed;
+  background: rgba(0, 0, 0, 0.9);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0%;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.35s, visibility 0.35s, height 0.35s;
+  overflow: hidden; }
+  .overlayContainer.open {
+    opacity: 1;
+    visibility: visible;
+    height: 100%; }
+    .overlayContainer.open li {
+      animation: fadeIn 0.5s ease forwards; }
+  .overlayContainer .overlay {
+    position: relative;
+    height: 70%;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 50px;
+    font-family: "avenirReg", sans-serif;
+    text-transform: uppercase;
+    text-align: center; }
+  .overlayContainer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    display: inline-block;
+    position: relative;
+    height: 100%; }
+    .overlayContainer ul li {
+      display: block;
+      height: 25%;
+      height: calc(100% / 4);
+      min-height: 50px;
+      position: relative;
+      opacity: 0; }
+      .overlayContainer ul li a {
+        display: block;
+        position: relative;
+        color: white;
+        text-decoration: none;
+        overflow: hidden; }
+        .overlayContainer ul li a:hover:after, .overlayContainer ul li a:focus:after, .overlayContainer ul li a:active:after {
+          width: 100%; }
+        .overlayContainer ul li a:after {
+          content: '';
+          position: absolute;
+          bottom: 0;
+          left: 50%;
+          width: 0%;
+          transform: translateX(-50%);
+          height: 3px;
+          background: black;
+          transition: 0.35s; }
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
 
 header {
   height: 100vh;
@@ -293,9 +397,15 @@ header {
 
 .portholeIcon2 {
   background-image: url("../../assets/classroom_hands.png"); }
+  @media (max-width: 680px) {
+    .portholeIcon2 {
+      display: none; } }
 
 .portholeIcon3 {
   background-image: url("../../assets/VentureKids_Art_Tech_Collide-cropped.jpg"); }
+  @media (max-width: 400px) {
+    .portholeIcon3 {
+      display: none; } }
 
 .aboutSection {
   display: flex;
@@ -322,8 +432,9 @@ header {
     text-align: center;
     margin: 2rem 0; }
 
-.wrapper.whatSection {
-  margin: 200px auto; }
+header.header-whatWeTeach {
+  margin-top: 148px auto;
+  height: auto; }
 
 .whatSectionTitle {
   display: inline-block;
@@ -408,6 +519,10 @@ header {
 .provideSection {
   padding: 200px 0;
   background-color: rgba(48, 187, 187, 0.3); }
+  @media (max-width: 680px) {
+    .provideSection {
+      padding-right: 40px;
+      padding-left: 40px; } }
 
 .provideSectionTitle {
   text-align: center; }
@@ -466,8 +581,9 @@ header {
   .provideHidden p {
     text-align: left; }
 
-.wrapper.whySection {
-  margin: 200px auto; }
+header.header-whyYourWorkMatters {
+  margin-top: 148px auto;
+  height: auto; }
 
 .whySectionTitle h2 {
   text-align: center; }
@@ -544,10 +660,18 @@ header {
 
 .joinSection-participate {
   padding: 200px 0 100px 0; }
+  @media (max-width: 680px) {
+    .joinSection-participate {
+      padding-left: 40px;
+      padding-right: 40px; } }
 
 .joinSection-donate {
   padding: 100px 0 200px 0;
   margin-bottom: 200px; }
+  @media (max-width: 680px) {
+    .joinSection-donate {
+      padding-left: 40px;
+      padding-right: 40px; } }
 
 .sectionOverview.joinOverview {
   max-width: 600px; }
@@ -719,7 +843,7 @@ h1 {
       font-size: 4rem; } }
   @media (max-width: 500px) {
     h1 {
-      font-size: 3rem; } }
+      font-size: 2.5rem; } }
   @media (max-width: 350px) {
     h1 {
       font-size: 2.3rem; } }
@@ -790,3 +914,6 @@ hr {
   width: 94vw;
   max-width: 800px;
   margin: 3rem auto; }
+  @media (max-width: 680px) {
+    .wrapper {
+      width: auto; } }

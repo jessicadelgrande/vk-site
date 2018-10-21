@@ -7,17 +7,10 @@ $("ul li").hover(function () {
 	$(this).siblings().stop().fadeTo(400, 1);
 });
 
-// NAVBAR CHANGES ON SCROLL
-$(window).on("scroll", function () {
-	if ($(this).scrollTop() > 24) {
-		$("#navLinkContainer").addClass("shrink");
-		$("#navLink").addClass("shrink");
-		$("#fa-bars").addClass("burger");
-	} else {
-		$("#navLinkContainer").removeClass("shrink");
-		$("#navLink").removeClass("shrink");
-		$("#fa-bars").removeClass("burger");
-	}
+// NAV AND OVERLAY ANIMATION
+$("#burgerContainer").click(function () {
+	$(this).toggleClass("active");
+	$("#overlayContainer").toggleClass("open");
 });
 
 // WHAT WE PROVIDE - SLIDE-DOWN TEXT BLOCKS

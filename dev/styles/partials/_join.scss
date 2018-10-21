@@ -4,11 +4,21 @@
 
 .joinSection-participate {
 	padding: 200px 0 100px 0;
+
+	@include bp(med) {
+		padding-left: 40px;
+		padding-right: 40px;
+	}
 }
 
 .joinSection-donate {
 	padding: 100px 0 200px 0;
 	margin-bottom: 200px;
+
+	@include bp(med) {
+		padding-left: 40px;
+		padding-right: 40px;
+	}
 }
 
 .sectionOverview.joinOverview {

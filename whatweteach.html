@@ -15,16 +15,33 @@
 	<meta charset="utf-8">
 </head>
 <body>
+
 <!-- NAV START -->
-	<nav>
+	<nav id="navContainer">
 		<div class="navContainer" id="navContainer">
-			<a href="http://venturekids.ca"><div class="navRobot"></div></a>
-			<ul class="navLinkContainer">
-				<li class="navLink"><a href="whatweteach.html">What we teach</a></li>
-				<li class="navLink"><a href="whyourworkmatters.html">Why our work matters</a></li>
-			</ul>
+			<a href="http://venturekids.ca"><div class="navRobot" id="navRobot"></div></a>
+			<div class="burgerContainer" id="burgerContainer">
+				<span class="bar bar1" id="bar1"></span>
+				<span class="bar bar2" id="bar2"></span>
+				<span class="bar bar3" id="bar3"></span>
+			</div>
+			<div class="overlayContainer" id="overlayContainer">
+				<div class="overlay">
+					<ul class="navLinkContainer" id="navLinkContainer">
+						<li class="navLink" id="navLink"><a href="index.html">Home</a></li>
+						<li class="navLink" id="navLink"><a href="whyourworkmatters.html">Why our work matters</a></li>
+					</ul>
+				</div>
+			</div>
 		</div>
 	</nav>
+
+<!-- HEADER START -->
+	<header class="header-whatWeTeach">
+		<div class="vkTitleContainer">
+			<h1 class="vkSign">VentureKids</h1>
+		</div>
+	</header>
 
 <!-- WHAT WE TEACH SECTION -->
 	<section class="wrapper whatSection">
@@ -86,5 +103,14 @@
 				<i class="fab fa-twitter"></i></a>
 		</div>
 	</footer>
+
+<!-- SCRIPTS -->
+	<script
+	src="https://code.jquery.com/jquery-3.3.1.min.js"
+	integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+	crossorigin="anonymous"></script>
+	<script src="public/scripts/main.js"></script>
+<!-- END SCRIPTS -->
+
 </body>
 </html>

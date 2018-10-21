@@ -69,8 +69,16 @@ header {
 
 .portholeIcon2 {
 	background-image: url("../../assets/classroom_hands.png");
+
+	@include bp(med) {
+		display: none;
+	}
 }
 
 .portholeIcon3 {
 	background-image: url("../../assets/VentureKids_Art_Tech_Collide-cropped.jpg");
+
+	@include bp(mini) {
+		display: none;
+	}
 }
