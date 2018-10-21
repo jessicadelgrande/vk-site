@@ -166,22 +166,49 @@ nav {
   position: fixed;
   top: 0;
   right: 0;
-  left: 0;
-  background-color: white; }
+  left: 0; }
 
 .navContainer {
   padding: 24px 48px 16px 0;
   text-align: right;
   display: flex;
   justify-content: space-between;
-  transition: all 0.5s cubic-bezier(0.93, 0.71, 0.58, 1); }
+  position: relative; }
+
+.burgerContainer {
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  background-color: white;
+  position: fixed;
+  right: 48px;
+  top: 24px; }
+
+.fa.fa-bars {
+  transition: all 0.5s cubic-bezier(0.93, 0.71, 0.58, 1);
+  position: fixed;
+  top: 20px;
+  right: 45px;
+  font-size: 2rem; }
 
 .navRobot {
   background-image: url("../../assets/robot_logo.png");
-  background-size: 48px;
-  width: 48px;
-  height: 48px;
+  background-size: 42px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: white;
+  border-radius: 50%;
+  width: 54px;
+  height: 54px;
   margin-left: 48px; }
+
+.navLinkContainer {
+  transition: all 0.5s cubic-bezier(0.93, 0.71, 0.58, 1);
+  transform: scale(1); }
+
+.shrink {
+  transform: scale(0);
+  opacity: 0; }
 
 .navLink {
   font-family: "avenirLight", sans-serif;
@@ -262,13 +289,13 @@ header {
   box-shadow: 0.3rem 0.3rem #fcf3aa; }
 
 .portholeIcon1 {
-  background-image: url("../../assets/ventureKids_photo.jpg"); }
+  background-image: url("../../assets/ventureKids_photo-cropped.jpg"); }
 
 .portholeIcon2 {
-  background-image: url("../../assets/Screen Shot 2018-10-19 at 9.53.55 PM.png"); }
+  background-image: url("../../assets/classroom_hands.png"); }
 
 .portholeIcon3 {
-  background-image: url("../../assets/VentureKids_Art_Tech_Collide 042-cropped.jpg"); }
+  background-image: url("../../assets/VentureKids_Art_Tech_Collide-cropped.jpg"); }
 
 .aboutSection {
   display: flex;

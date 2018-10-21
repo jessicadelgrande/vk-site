@@ -3,7 +3,6 @@ nav {
 	top: 0;
 	right: 0;
 	left: 0;
-	background-color: white;
 }
 
 .navContainer {
@@ -11,15 +10,57 @@ nav {
 	text-align: right;
 	display: flex;
 	justify-content: space-between;
-	transition: all .5s cubic-bezier(.93, .71, .58, 1);
+	position: relative;
 }
+
+.burgerContainer {
+	width: 54px;
+	height: 54px;
+	border-radius: 50%;
+	background-color: white;
+	position: fixed;
+	right: 48px;
+	top: 24px;
+}
+
+.fa.fa-bars {
+	transition: all .5s cubic-bezier(.93, .71, .58, 1);
+	position: fixed;
+	top: 20px;
+	right: 45px;
+	font-size: 2rem;
+}
+
+// .burger {
+// 	opacity: 1;
+// 	transform: scale(1);
+// 	top: 24px;
+// 	right: 48px;
+// 	width: 36px;
+// 	height: 36px;
+// 	border: 1px solid red;
+// }
 
 .navRobot {
 	background-image: url("../../assets/robot_logo.png");
-	background-size: 48px;
-	width: 48px;
-	height: 48px;
+	background-size: 42px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-color: white;
+	border-radius: 50%;	
+	width: 54px;
+	height: 54px;
 	margin-left: 48px;
+}
+
+.navLinkContainer {
+	transition: all .5s cubic-bezier(.93, .71, .58, 1);
+	transform: scale(1);
+}
+
+.shrink {
+	transform: scale(0);
+	opacity: 0;
 }
 
 .navLink {

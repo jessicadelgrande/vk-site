@@ -7,22 +7,18 @@ $("ul li").hover(function () {
 	$(this).siblings().stop().fadeTo(400, 1);
 });
 
-// NAVBAR SHRINK ON SCROLL
-// window.onscroll = function() {scrollFunction()};
-
-// function scrollFunction() {
-// 	if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-// 		document.getElementById("navContainer").style.padding = "16px 48px 8px 0";
-// 		document.getElementById("navRobot").style.width = "24px";
-// 		document.getElementById("navRobot").style.height = "24px";
-// 		document.getElementById("navRobot").style.backgroundSize = "24px";
-// 	} else {
-// 		document.getElementById("navContainer").style.padding = "24px 48px 16px 0";
-// 		document.getElementById("navRobot").style.width = "48px";
-// 		document.getElementById("navRobot").style.height = "48px";
-// 		document.getElementById("navRobot").style.backgroundSize = "48px";
-// 	}
-// }
+// NAVBAR CHANGES ON SCROLL
+$(window).on("scroll", function () {
+	if ($(this).scrollTop() > 24) {
+		$("#navLinkContainer").addClass("shrink");
+		$("#navLink").addClass("shrink");
+		$("#fa-bars").addClass("burger");
+	} else {
+		$("#navLinkContainer").removeClass("shrink");
+		$("#navLink").removeClass("shrink");
+		$("#fa-bars").removeClass("burger");
+	}
+});
 
 // WHAT WE PROVIDE - SLIDE-DOWN TEXT BLOCKS
 $(".provideText-lunch").click(function () {
