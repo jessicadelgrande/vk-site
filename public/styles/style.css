@@ -432,9 +432,8 @@ header {
     text-align: center;
     margin: 2rem 0; }
 
-header.header-whatWeTeach {
-  margin-top: 148px auto;
-  height: auto; }
+.wrapper.whatSection {
+  margin: 148px auto; }
 
 .whatSectionTitle {
   display: inline-block;
@@ -581,9 +580,8 @@ header.header-whatWeTeach {
   .provideHidden p {
     text-align: left; }
 
-header.header-whyYourWorkMatters {
-  margin-top: 148px auto;
-  height: auto; }
+.wrapper.whySection {
+  margin: 148px auto; }
 
 .whySectionTitle h2 {
   text-align: center; }
